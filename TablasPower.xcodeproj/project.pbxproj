@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DB6098B8192E14F9005272ED /* EZVCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6098B7192E14F9005272ED /* EZVCustomCell.m */; };
 		DB6098BA192E1572005272ED /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6098B9192E1572005272ED /* CustomCell.xib */; };
+		DB67C90E192E1F6200B70D32 /* OtraCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB67C90D192E1F6200B70D32 /* OtraCustomCell.m */; };
 		DB789AA2192DFDD400F15AFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB789AA1192DFDD400F15AFA /* Foundation.framework */; };
 		DB789AA4192DFDD400F15AFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB789AA3192DFDD400F15AFA /* CoreGraphics.framework */; };
 		DB789AA6192DFDD400F15AFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB789AA5192DFDD400F15AFA /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 		DB6098B6192E14F9005272ED /* EZVCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZVCustomCell.h; sourceTree = "<group>"; };
 		DB6098B7192E14F9005272ED /* EZVCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZVCustomCell.m; sourceTree = "<group>"; };
 		DB6098B9192E1572005272ED /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		DB67C90C192E1F6200B70D32 /* OtraCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtraCustomCell.h; sourceTree = "<group>"; };
+		DB67C90D192E1F6200B70D32 /* OtraCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtraCustomCell.m; sourceTree = "<group>"; };
 		DB789A9E192DFDD400F15AFA /* TablasPower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TablasPower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB789AA1192DFDD400F15AFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB789AA3192DFDD400F15AFA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,6 +132,8 @@
 				DB6098B6192E14F9005272ED /* EZVCustomCell.h */,
 				DB6098B9192E1572005272ED /* CustomCell.xib */,
 				DB6098B7192E14F9005272ED /* EZVCustomCell.m */,
+				DB67C90C192E1F6200B70D32 /* OtraCustomCell.h */,
+				DB67C90D192E1F6200B70D32 /* OtraCustomCell.m */,
 			);
 			path = TablasPower;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB67C90E192E1F6200B70D32 /* OtraCustomCell.m in Sources */,
 				DB6098B8192E14F9005272ED /* EZVCustomCell.m in Sources */,
 				DB789AD5192DFF9900F15AFA /* EZVViewVinos.m in Sources */,
 				DB789AB2192DFDD500F15AFA /* EZVAppDelegate.m in Sources */,

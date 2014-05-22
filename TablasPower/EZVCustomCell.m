@@ -22,6 +22,8 @@
 - (void)awakeFromNib
 {
     // Initialization code
+    //Se ejecuta al cargar elnib. Si se neceita modificar algun aspecto del xib, este es el lugar adecuao
+    //Se ejecuta una única vez. Modificaciones genéricas para todas las celds se ralizana aqui p.e.
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

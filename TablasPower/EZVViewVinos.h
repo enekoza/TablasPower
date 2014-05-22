@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "Vino.h"
+#import "EZVCustomCell.h"
+#import "OtraCustomCell.h"
 @interface EZVViewVinos : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (strong,nonatomic) NSArray *modelo;

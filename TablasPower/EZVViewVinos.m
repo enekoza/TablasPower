@@ -9,6 +9,10 @@
 #import "EZVViewVinos.h"
 #import "Vino.h"
 
+#define kCustomPARCell @"CELDA_CUSTOM"
+#define kCustomIMPARCell @"OTRA_CELDA"
+
+
 @interface EZVViewVinos ()
 
 @end
@@ -24,21 +28,44 @@
     
     
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CELL" forIndexPath:indexPath];
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CELL" forIndexPath:indexPath];
+//    EZVCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:@"OTRA_CELDA" forIndexPath:indexPath];
     
-    cell.backgroundColor = [UIColor purpleColor];
+    int i = indexPath.row;
+     Vino *currentVino = [self.modelo objectAtIndex:indexPath.row];
+    if ((i%2)==0){
+        EZVCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:kCustomPARCell forIndexPath:indexPath];
+        cell.vineLabel.text = currentVino.nombreVino;
+        cell.yearLabel.text = currentVino.cosecha;
+//        cell.imageVine.image = currentVino.photo;
+        return cell;
+    }else{
+        OtraCustomCell  *cell = [tableView dequeueReusableCellWithIdentifier:kCustomIMPARCell forIndexPath:indexPath];
+         cell.vineYearLabel.text = [NSString stringWithFormat:@"%@ - %@", currentVino.nombreVino, currentVino.cosecha];
+        return cell;
+    }
     
-    Vino *currentVino = [self.modelo objectAtIndex:indexPath.row];
-    cell.textLabel.text = currentVino.nombreVino;
     
+
+    
+    
+    
+//    cell.backgroundColor = [UIColor purpleColor];
+    
+    
+   
+    //cell.textLabel.text = currentVino.nombreVino;
+    
+
+   
 //    cell.textLabel.text = [self.modelo[indexPath.row] objectForKey:@"nombreVino"];
     
-    return cell;
+    
     
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    return 120;
 }
 
 #pragma mark - Vistas
@@ -70,7 +97,11 @@
     self.tableView.dataSource = self;
     
     //Decirle el tipo de celda qeu se va a usar
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CELL"];
+    //[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CELL"];
+    //[self.tableView registerClass:[EZVCustomCell class] forCellReuseIdentifier:@"CELDA_CUSTOM"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"CustomCell" bundle:nil] forCellReuseIdentifier:@"CELDA_CUSTOM"];
+    [self.tableView registerClass:[OtraCustomCell class] forCellReuseIdentifier:@"OTRA_CELDA"];
+    
     
     //Se dibuja la tabla en una posición determinada
     self.tableView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
