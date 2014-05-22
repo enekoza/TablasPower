@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB6098B8192E14F9005272ED /* EZVCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6098B7192E14F9005272ED /* EZVCustomCell.m */; };
+		DB6098BA192E1572005272ED /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6098B9192E1572005272ED /* CustomCell.xib */; };
 		DB789AA2192DFDD400F15AFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB789AA1192DFDD400F15AFA /* Foundation.framework */; };
 		DB789AA4192DFDD400F15AFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB789AA3192DFDD400F15AFA /* CoreGraphics.framework */; };
 		DB789AA6192DFDD400F15AFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB789AA5192DFDD400F15AFA /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB6098B6192E14F9005272ED /* EZVCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZVCustomCell.h; sourceTree = "<group>"; };
+		DB6098B7192E14F9005272ED /* EZVCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZVCustomCell.m; sourceTree = "<group>"; };
+		DB6098B9192E1572005272ED /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		DB789A9E192DFDD400F15AFA /* TablasPower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TablasPower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB789AA1192DFDD400F15AFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB789AA3192DFDD400F15AFA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +126,9 @@
 				DB789AA8192DFDD400F15AFA /* Supporting Files */,
 				DB789AD3192DFF9900F15AFA /* EZVViewVinos.h */,
 				DB789AD4192DFF9900F15AFA /* EZVViewVinos.m */,
+				DB6098B6192E14F9005272ED /* EZVCustomCell.h */,
+				DB6098B9192E1572005272ED /* CustomCell.xib */,
+				DB6098B7192E14F9005272ED /* EZVCustomCell.m */,
 			);
 			path = TablasPower;
 			sourceTree = "<group>";
@@ -230,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6098BA192E1572005272ED /* CustomCell.xib in Resources */,
 				DB789AAC192DFDD400F15AFA /* InfoPlist.strings in Resources */,
 				DB789AB4192DFDD500F15AFA /* Images.xcassets in Resources */,
 			);
@@ -250,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6098B8192E14F9005272ED /* EZVCustomCell.m in Sources */,
 				DB789AD5192DFF9900F15AFA /* EZVViewVinos.m in Sources */,
 				DB789AB2192DFDD500F15AFA /* EZVAppDelegate.m in Sources */,
 				DB789AD2192DFE4900F15AFA /* Vino.m in Sources */,
@@ -450,6 +460,7 @@
 				DB789ACC192DFDD500F15AFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB789ACD192DFDD500F15AFA /* Build configuration list for PBXNativeTarget "TablasPowerTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +469,7 @@
 				DB789ACF192DFDD500F15AFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

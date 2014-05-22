@@ -22,7 +22,11 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CELL" forIndexPath:indexPath];
+    
+    cell.backgroundColor = [UIColor purpleColor];
     
     Vino *currentVino = [self.modelo objectAtIndex:indexPath.row];
     cell.textLabel.text = currentVino.nombreVino;
@@ -31,6 +35,10 @@
     
     return cell;
     
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
 }
 
 #pragma mark - Vistas
@@ -55,15 +63,7 @@
 //    return self;
 //}
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    //HAsta aqui no esta disponible la vista
-    // Do any additional setup after loading the view.
-    
-    // titulo
-    self.title = @"Mis Vinos";
-    
+-(void)pinTableView{
     
     //Asociar los protocolos delegados
     self.tableView.delegate = self;
@@ -75,7 +75,27 @@
     //Se dibuja la tabla en una posición determinada
     self.tableView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     
+    
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.separatorColor = [UIColor clearColor];
+    self.tableView.backgroundColor = [UIColor orangeColor];
+    
+    
+    
     [self.view addSubview:self.tableView];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    //HAsta aqui no esta disponible la vista
+    // Do any additional setup after loading the view.
+    
+    // titulo
+    self.title = @"Mis Vinos";
+    
+    [self pinTableView];
 }
 
 - (void)didReceiveMemoryWarning

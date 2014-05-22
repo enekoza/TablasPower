@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8F57A100-E7B9-40B1-94D1-DD31057B7397</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TablasPower</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1FF0BAF3-3380-485B-A738-4474FF52FD6E</key>
+		<string>https://github.com/enekoza/TablasPower.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TablasPower.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1FF0BAF3-3380-485B-A738-4474FF52FD6E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/enekoza/TablasPower.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1FF0BAF3-3380-485B-A738-4474FF52FD6E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1FF0BAF3-3380-485B-A738-4474FF52FD6E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TablasPower</string>
+		</dict>
+	</array>
+</dict>
+</plist>
